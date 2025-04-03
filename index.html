@@ -6,6 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link
       rel="stylesheet"
       href="src/style.css"
@@ -19,7 +20,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the poem"
@@ -33,9 +34,11 @@
             class="submit-button"
           />
         </form>
-        <div class="poem">
-          The poem will be here<br />
-          The poem will be here
+        <div
+          class="poem"
+          id="poem"
+        >
+          <br />
         </div>
       </main>
 
@@ -47,11 +50,12 @@
         >
         and is hosted on
         <a
-          href="https://vercel.com/"
+          href="https://ai-poem-generator-nu.vercel.app/"
           target="_blank"
           >vercel</a
         >
       </footer>
+      <script src="index.js"></script>
     </body>
   </div>
 </html>
