@@ -8,44 +8,50 @@
     />
     <link
       rel="stylesheet"
-      href="style.css"
+      href="src/style.css"
     />
     <title>AI poem generator</title>
   </head>
-  <body>
-    <header>
-      <h1>AI poem generator</h1>
-    </header>
+  <div class="container">
+    <body>
+      <header>
+        <h1>AI poem generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        The poem will be here<br />
-        The poem will be here
-      </div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of the poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input
+            type="submit"
+            class="submit-button"
+          />
+        </form>
+        <div class="poem">
+          The poem will be here<br />
+          The poem will be here
+        </div>
+      </main>
 
-    <footer>
-      This project was coded by<a
-        href="https://github.com/Helia-Gholami/AI-poem-generator"
-        target="_blank"
-        >Helia Gholami</a
-      >
-      and is hosted on
-      <a
-        href="https://vercel.com/"
-        target="_blank"
-        >vercel</a
-      >
-    </footer>
-  </body>
+      <footer>
+        This project was coded by<a
+          href="https://github.com/Helia-Gholami/AI-poem-generator"
+          target="_blank"
+          >Helia Gholami</a
+        >
+        and is hosted on
+        <a
+          href="https://vercel.com/"
+          target="_blank"
+          >vercel</a
+        >
+      </footer>
+    </body>
+  </div>
 </html>
